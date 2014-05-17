@@ -1,13 +1,13 @@
-class Modula2Lexer(RegexLexer):
+class ComponentPascalLexer(RegexLexer):
     """
     For `Component Pascal <http://www.oberon.ch/pdf/CP-Lang.pdf>`_ source code.
 
     .. versionadded:: 0.0
     """
     name = 'Component Pascal'
-    aliases = ['ComponentPascal', 'cp', 'CP']
+    aliases = ['componentpascal', 'cp']
     filenames = ['*.cp', '*.cps']
-    mimetypes = ['text/plain']
+    mimetypes = ['text/x-component-pascal']
 
     flags = re.MULTILINE | re.DOTALL
 
