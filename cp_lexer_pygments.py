@@ -2,10 +2,10 @@ class ComponentPascalLexer(RegexLexer):
     """
     For `Component Pascal <http://www.oberon.ch/pdf/CP-Lang.pdf>`_ source code.
 
-    .. versionadded:: 0.0
+    .. versionadded:: 0.1
     """
     name = 'Component Pascal'
-    aliases = ['componentpascal', 'cp']
+    aliases = ['ComponentPascal', 'CP']
     filenames = ['*.cp', '*.cps']
     mimetypes = ['text/x-component-pascal']
 
@@ -63,8 +63,8 @@ class ComponentPascalLexer(RegexLexer):
         'ABSTRACT', 'ARRAY', 'BEGIN', 'BY', 'CASE', 'CLOSE', 'CONST', 'DIV',
         'DO', 'ELSE', 'ELSIF', 'EMPTY', 'END', 'EXIT', 'EXTENSIBLE', 'FOR',
         'IF', 'IMPORT', 'IN', 'IS', 'LIMITED', 'LOOP', 'MOD', 'MODULE', 'NIL',
-        'OF', 'OR', 'OUT', 'RETURN', 'THEN', 'TO', 'TYPE', 'UNTIL', 'VAR',
-        'WHILE', 'WITH',
+        'OF', 'OR', 'OUT', 'POINTER', 'PROCEDURE', 'RECORD', 'REPEAT', 'RETURN',
+        'THEN', 'TO', 'TYPE', 'UNTIL', 'VAR', 'WHILE', 'WITH'
     ]
 
     cp_pervasives = [
@@ -73,7 +73,7 @@ class ComponentPascalLexer(RegexLexer):
         'CAP', 'CHAR', 'CHR', 'DEC', 'ENTIER', 'EXCL', 'HALT', 'INC', 'INCL',
         'INF', 'INTEGER', 'FALSE', 'LEN', 'LONG', 'LONGINT', 'MAX', 'MIN',
         'NEW', 'ODD', 'ORD', 'REAL', 'SET', 'SHORT', 'SHORTCHAR', 'SHORTINT',
-        'SHORTREAL', 'SIZE', 'TRUE', 
+        'SHORTREAL', 'SIZE', 'TRUE'
     ]
 
     def __init__(self, **options):
