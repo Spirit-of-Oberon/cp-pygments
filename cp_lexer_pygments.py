@@ -33,7 +33,7 @@ class ComponentPascalLexer(RegexLexer):
         'operators': [
             (r'[*/+=#~&<>\^-]', Operator),
             (r':=', Operator),   # assignment
-            (r'^', Operator),    # pointer deref
+            (r'\^', Operator),    # pointer deref
             (r'\.\.', Operator), # ellipsis or range
         ],
         'punctuation': [
